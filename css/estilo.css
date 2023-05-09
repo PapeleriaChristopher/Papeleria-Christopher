@@ -1,0 +1,252 @@
+/*Body*/
+body {
+      background-image: url(../imagenes/fondo.jpg);
+	  /*para que no se repita la imagen de fondo*/
+	 /* background-repeat: no-repeat; */
+	  /*ajustar tamaño*/
+	  /*background-size: 100% 100%;*/
+	  /*fuente y tamaño de la letra*/
+	  font-family: ChapuChaps;
+	  font-size: 50px; 
+	  color: #080F72;
+}
+hr{ 
+/*border es para la linea*/
+	border: 5px solid #0A0D3F;
+	/*es para el terminado de las orillas se expresa en pixeles*/
+	border-radius: 5px;
+	border-width: 80%;
+}
+p{ /*parrafo*/
+	text-align: justify; 
+	font-size: 30px;
+	color: black;
+	/*color de fondo*/
+	background-color: white;
+}
+table, td, tr{
+	/*linea de grosor y tipo de lineas*/
+	border: 5px solid;
+	/*color de la linea*/
+	border-color: #2A0180;
+	/*alineacion del texto*/
+	text-align: center;
+	/*color de fondo*/
+	background-color: #D7BDE2;
+}
+th{
+	background-color: black;
+}
+ul{
+	/*indica el tipo de viñeta*/
+	list-style-type: circle; 
+	list-style-position: inside;
+}
+ol{
+	/*algunos de los valores de list-type son:
+	lower-alpha; lower-roman; upper-alpha;*/
+   list-style-type: upper-roman;
+   list-style-position: inside;
+}
+.pie{
+	text-align: center;
+	font-size: 10px;
+	color: #4A235A; 
+	font-family: rewrite;
+	font-weight: bold;
+}
+.tabla{
+	text-align: center;
+	font-size: 40px;
+	color: #5B2C6F; 
+	font-family: beauty;
+}
+.titulo{
+	text-align: center;
+	font-size: 70px;
+	color: #572BEE; 
+	font-family: bellish;
+	font-weight: bold;
+}
+.subtitulo{
+	text-align: center;
+	font-size: 70px;
+	color: #572BEE; 
+	font-family: maleantes;
+	font-weight: bold;
+}
+.imgmarq{
+	width: 400px;
+	height: 300px;
+}
+.boton{
+	width: 100px;
+	height: 100px; 
+	border-radius: 50px;
+}
+.imgtab{
+	width: 400px;
+	height: 400px;
+}
+.otraimg{
+	width: 600px; 
+	height: 400px;
+	padding:6px;
+	border:12px solid #3700A5;
+}
+
+@font-face{
+	font-family: bellish;
+	src: url("../fuentes/Bellish Demo.ttf");
+}
+@font-face{
+	font-family: ChapuChaps;
+	src: url("../fuentes/ChapuChaps.otf");
+}
+@font-face{
+	font-family: rewrite;
+	src: url("../fuentes/Rewrite-Bold.ttf");
+}
+@font-face{
+	font-family: beauty;
+	src: url("../fuentes/Just Beauty.otf");
+}
+@font-face{
+	font-family: maleantes;
+	src: url("../fuentes/Maleantes Tres-d.ttf")
+}
+/*fuentes de google sin necesidad de descargar*/
+.fuentegoogle{
+	font-family: 'Alkatra', cursive;
+	font-size: 70px:
+}
+/*uso de DIVs*/
+/*DIV o caja para el encabezado*/
+*{
+	margin: 0px;
+	padding: 0px;
+}
+div#top{
+	width: 100%;
+	height: 200px;
+	background-image: linear-gradient(#D2B4DE,#E8DAEF);
+}
+div#principal{
+	margin: auto;
+	margin-top: 10px;
+	width: 90%;
+	height: 900px;
+	background-image: radial-gradient(#D2B4DE,#E8DAEF);
+	/*ba*/
+}
+div#piep{
+	margin-top: 15px;
+	width: 100%;
+	height: 100px;
+	background-image: linear-gradient(#D2B4DE,#E8DAEF);
+}
+.caja{
+width: 100px;
+	height: 100px; 
+	border-radius: 50px;
+	border: 1px solid blue;
+	margin: 5px; 
+	color: purple;
+	text-align: center;
+	display: inline-block;
+}
+.caja:hover{
+	box-shadow: 0 0 10px black;
+	transform: scale (1.3);
+}
+.caja-texto{
+	padding-top:2px;
+	font-size: 20px;
+	color:  black;
+	font-weight: bold;
+}
+.texto-adicional{
+	padding-top: 5px;
+	font-size: 15px;
+}
+.carrousel{
+    width:600px;
+    margin:auto;
+    box-sizing:border-box;
+}
+.conteCarrousel{
+    width:100%;
+    height:400px;
+    overflow:hidden;
+    box-sizing:border-box;
+}
+.itemCarrousel{
+    position:relative;
+    width:100%;
+    height:100%;
+    box-sizing:border-box;
+}
+.itemCarrouselTarjeta{
+    width:100%;
+    height:100%;
+    box-sizing:border-box;
+}
+.itemCarrouselArrows{
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    height:100%;
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:20px;
+    box-sizing:border-box;
+}
+.itemCarrouselArrows >i :hover{
+    cursor:pointer;
+}
+.conterCarrouselController{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+	align-items:center;
+}
+.conterCarrouselController >a{
+    text-decoration:none;
+    font-size:32px;
+    color:grey;
+}
+.itemCarrouselArrows >a >i {
+    color:white;
+}
+.descripcion{
+	font-family: ChapuChaps;
+	font-size: 30px;
+	color: #5B2C6F;
+	text-align: center;
+}
+.caja2{
+	height: 400px;
+	width: 400px;
+	background: blue;
+	border: 1px solid blue;
+	margin: 5px; 
+	color: purple;
+	text-align: center;
+	display: inline-block;
+}
+.caja:hover{
+	box-shadow: 0 0 10px black;
+	transform: scale (1.3);
+}
+
+
+ 
+ 
+ 
+ 
+ 
+ 
